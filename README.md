@@ -1,2 +1,2 @@
 # kanban
-kanban app
+Trigger build of kanban application
