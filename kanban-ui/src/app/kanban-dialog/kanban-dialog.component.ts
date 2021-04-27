@@ -43,6 +43,7 @@ export class KanbanDialogComponent implements OnInit {
       )
     }
     this.dialogRef.close();
+    setTimeout(100);
     window.location.reload();
   }
 
