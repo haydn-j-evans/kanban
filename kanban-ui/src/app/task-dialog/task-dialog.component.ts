@@ -49,7 +49,7 @@ export class TaskDialogComponent implements OnInit {
     }
     this.dialogRef.close();
     async function delayExample() {
-      await sleep(500);
+      await new Promise(resolve => setTimeout(resolve, 500));
     }
     window.location.reload();
   }
