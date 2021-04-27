@@ -49,7 +49,9 @@ export class TaskDialogComponent implements OnInit {
     }
     this.dialogRef.close();
     let delayreload = setTimeout(reloadPage, 500);
-    
+    function reloadPage() {
+      window.location.reload();
+    }
   }
 
   close() {
@@ -63,7 +65,4 @@ export class TaskDialogComponent implements OnInit {
     this.task.status = 'TODO';
   }
 
-  function reloadPage() {
-      window.location.reload();
-  }
 }
