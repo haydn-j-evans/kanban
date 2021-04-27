@@ -48,10 +48,8 @@ export class TaskDialogComponent implements OnInit {
       this.taskService.updateTask(this.task).subscribe();
     }
     this.dialogRef.close();
-    async function delayExample() {
-      await new Promise(resolve => setTimeout(resolve, 500));
-    }
-    window.location.reload();
+    let delayreload = setTimeout(reloadPage, 500);
+    
   }
 
   close() {
@@ -65,4 +63,7 @@ export class TaskDialogComponent implements OnInit {
     this.task.status = 'TODO';
   }
 
+  function reloadPage() {
+      window.location.reload();
+  }
 }
