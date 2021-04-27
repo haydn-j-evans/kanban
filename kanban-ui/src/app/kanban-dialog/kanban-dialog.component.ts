@@ -44,7 +44,7 @@ export class KanbanDialogComponent implements OnInit {
     }
     this.dialogRef.close();
     async function delayExample() {
-      await sleep(500);
+      wait new Promise(resolve => setTimeout(resolve, 500));
     }
     window.location.reload();
   }
