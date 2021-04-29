@@ -43,7 +43,9 @@ export class KanbanDialogComponent implements OnInit {
       )
     }
     this.dialogRef.close();
-   # let delayreload = setTimeout(reloadPage, 500);
+/**
+* let delayreload = setTimeout(reloadPage, 500);
+*/
   }
   
   function reloadPage() {
