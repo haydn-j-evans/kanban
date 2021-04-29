@@ -48,7 +48,8 @@ export class TaskDialogComponent implements OnInit {
       this.taskService.updateTask(this.task).subscribe();
     }
     this.dialogRef.close();
-    let delayreload = setTimeout(reloadPage, 500);
+    
+    # let delayreload = setTimeout(reloadPage, 500);
     
   }
 
