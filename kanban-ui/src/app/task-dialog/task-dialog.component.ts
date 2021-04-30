@@ -48,17 +48,12 @@ export class TaskDialogComponent implements OnInit {
       this.taskService.updateTask(this.task).subscribe();
     }
     this.dialogRef.close();
-
-/**    
-*    # let delayreload = setTimeout(reloadPage, 500);
-*/   
-
+    window.location.reload();
   }
 
   close() {
       this.dialogRef.close();
   } 
-
   private mapFormToTaskModel(): void {
     this.task.title = this.form.get('title').value;
     this.task.description = this.form.get('description').value;
