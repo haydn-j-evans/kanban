@@ -49,7 +49,6 @@ export class KanbanDialogComponent implements OnInit {
       window.location.reload();
     }
   }
-  }
   
   
 }
